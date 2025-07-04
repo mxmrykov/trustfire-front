@@ -1,8 +1,8 @@
 import React from "react";
 import BaseComponents from "./BaseComponents"
 
-export default function Home(): React.JSX.Element {
+export default function B2b(): React.JSX.Element {
     return <BaseComponents>
-        home
+        b2b
     </BaseComponents>
 }
