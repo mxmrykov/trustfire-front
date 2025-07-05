@@ -9,6 +9,7 @@ import B2b from "./screen/B2b.tsx";
 import "../css/root.css"
 // @ts-nocheck
 import {Provider} from "../../components/ui/provider"
+import Auth from "./screen/Auth";
 
 export default function App() {
     return <Provider defaultTheme={"light"}>
@@ -16,6 +17,8 @@ export default function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/catalog" element={<Catalog/>}/>
             <Route path="/b2b" element={<B2b/>}/>
+            <Route path="/auth" element={<Auth/>}/>
+            <Route path="*" element={<Home/>}/>
         </Routes>
     </Provider>
 }
